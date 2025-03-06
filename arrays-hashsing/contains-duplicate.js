@@ -13,18 +13,20 @@
 **/
 
 /** My Approach
-Time complexity: O(n) -> Iterate through the nums array once.
-
-Space complexity: O(n) -> The Set stores up to n elements in the worse case.
-
- HashSet [1, 2, 3] => 3
+ *
+ * Time complexity: O(n) => Iterate through array once.
+ *
+ * Space complexity: O(n) => Wrose case, all elements are unique and stored in Set.
+ *
+ * HashSet [1, 2, 3] => 3 is duplicate
+ * HashSet [1, 2, 3, 4] => No duplicate
  **/
 
 class Solution {
     /**
      * @param {number[]} nums
-        * @return {boolean}
-        */
+     * @return {boolean}
+     */
     hasDuplicate(nums) {
         let hashset = new Set()
         for (let n of nums) {
